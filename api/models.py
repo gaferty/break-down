@@ -7,7 +7,7 @@ class Project(models.Model):
     title = models.CharField(blank = True, max_length=75)
     description = models.TextField()
     length = models.CharField(choices = PROJECT_LENGTH, default='medium')
-    # author = models.ForeignKey('auth.User', blank = True, related_name= 'api', on_delete= models.CASCADE)
+    author = models.ForeignKey('auth.User', related_name='projects', on_delete=models.CASCADE)
 
     class Meta:
         ordering = ['created']
