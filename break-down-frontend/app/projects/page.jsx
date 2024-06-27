@@ -1,7 +1,22 @@
+import { Container } from 'postcss'
 import React from 'react'
+import Card from '../ui/layout/projects/card'
+import Searchbar from '../ui/layout/projects/searchbar'
 
 export default function Page() {
-  return (
-    <div>This will be the page that shows if someone has a project that they want to create</div>
-  )
+
+
+  try{
+
+  }catch{
+    return (
+      <div className="container mx-auto bg-seasalt flex-col content-center">
+        <Searchbar/>
+        <div className="w-full flex-col mx-auto">
+          <Card/>
+          <Card/>
+        </div>
+      </div>
+    )
+  }
 }
