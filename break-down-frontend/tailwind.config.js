@@ -16,7 +16,11 @@ module.exports = {
         "sage":"#C7C7A6",
         "seasalt": "#F8F7F9",
         "navblue": "#92DCE5",
-        "maize": "#F7EC59",
+        // "primary": "#D81E5B",
+        // "primary": "#0EB1D2",
+        "primary": "#072ac8",
+        "secondary": "#1e96fc",
+        "tertiary": "#FDE74C"
       },
     },
   },

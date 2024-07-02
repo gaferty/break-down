@@ -1,12 +1,17 @@
 import Link from 'next/link'
 import React from 'react'
+import { Login, NavLinks } from './Buttons'
 export default function Navigation() {
   return (
-    <div className = "flex justify-around mb-10 bg-navblue p-2">
-      <div className="w-80 flex justify-between">
-        <Link  className ="p-2 rounded text-black font-bold" href= '/' > Home </Link>
-        <Link className="p-2 rounded text-black font-bold" href= '/projects' > Projects </Link>
-
+    <div className = "flex justify-around mb-10 bg-white p-2">
+      <div className=" w-full flex">
+      <div className='flex-1 flex justify-end'>
+        <NavLinks name='Home' link= "/"/>
+        <NavLinks name='Projects' link= "/projects"/>
+      </div>
+      <div className='flex-1 flex justify-end ml-auto'>
+        <Login />
+      </div>
       </div>
     </div>
   )
