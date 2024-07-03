@@ -2,8 +2,8 @@
 
 import { Container } from 'postcss'
 import React, {useState, useEffect} from 'react'
-import Card, { SquareCard } from '../ui/layout/projects/card'
-import Searchbar from '../ui/layout/projects/searchbar'
+import Card, { SquareCard } from '../ui/projects/card'
+import Searchbar from '../ui/projects/searchbar'
 import { FilterButton } from '../ui/layout/Buttons'
 import {getProjects} from '../lib/data'
 
