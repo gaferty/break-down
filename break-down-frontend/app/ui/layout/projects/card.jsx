@@ -1,16 +1,16 @@
 import React from 'react'
 
-export function SquareCard(params) {
+export function SquareCard({project}) {
   return(
  <div className='bg-gray-100 border-2 border-secondary rounded w-90 h-fit hover:shadow hover:shadow-lg hover:shadow;tertiary'>
-    <h2 className='bg-primary text-white text-lg px-5 font-bold text-center'> Project Title</h2>
+    <h2 className='bg-primary text-white text-lg px-5 font-bold text-center'>{project.title}</h2>
     <div className="w-11/12 h-full flex flex-col jutify-evenly mx-auto">
             <div className='flex-1 mb-4'>
-              <p className='w-9/10'>descriptive text that appears a a a a a a a a a a a a a a a a something else can be written here instead of the usual crap that is so terribble</p>
+              <p className='w-9/10'>{ project.description }</p>
             </div>
             <div className='mb-4'>
-              <p className="border-t-2 border-dotted border-black mb-1">Length</p>
-              <p className="border-t-2 border-dotted border-black mb-1">Difficulty</p>
+              <p className="border-t-2 border-dotted border-black mb-1">{project.length}</p>
+              <p className="border-t-2 border-dotted border-black mb-1">{project.difficulty}</p>
             </div>
 
     </div>

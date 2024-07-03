@@ -19,7 +19,7 @@ const [projects, setProjects] = useState(null)
 
     fetchData().catch(console.error);
   }, [])
-
+  console.log(projects)
   try{
     return (
       <div className="container mx-auto bg-seasalt flex-col content-center">
@@ -30,15 +30,11 @@ const [projects, setProjects] = useState(null)
           <FilterButton name = "Exercise"/>
         </div>
         <div className="w-full grid grid-cols-3 gap-5 mx-auto justify-self-center max-md:grid-cols-1 max-w-screen-lg">
-          <div className='justify-center'>
-            <SquareCard/>
+          {projects.map(project =>
+          <div key={project.id}>
+            <SquareCard project = {project}/>
           </div>
-          <div>
-            <SquareCard/>
-          </div>
-          <div>
-            <SquareCard/>
-          </div>
+          )}
         </div>
       </div>
     )
