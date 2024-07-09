@@ -8,6 +8,7 @@ export default function Navigation() {
       <div className='flex-1 flex justify-end'>
         <NavLinks name='Home' link= "/"/>
         <NavLinks name='Projects' link= "/projects"/>
+        <NavLinks name = 'Create' link = '/create'/>
       </div>
       <div className='flex-1 flex justify-end ml-auto'>
         <Login />

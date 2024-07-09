@@ -42,13 +42,14 @@ const [projects, setProjects] = useState(null)
     return (
       <div className="container mx-auto bg-seasalt flex-col content-center">
         <Searchbar/>
-        <div>
+        <div className='flex justify-center'>
         <FilterButton name = "Exercise"/>
-        There is something
+
         </div>
-        <div className="w-full flex-col mx-auto">
-          <Card/>
-          <Card/>
+        <div className="w-full grid grid-cols-3 gap-5 mx-auto justify-self-center max-md:grid-cols-1 max-w-screen-lgo">
+          <SquareCard project = {{title: "default", description: "This is a post", length: "Maximum", difficulty:"a lot"}}/>
+          <SquareCard project = {{title: "default", description: "This is a post", length: "Maximum", difficulty:"a lot"}}/>
+          <SquareCard project = {{title: "default", description: "This is a post", length: "Maximum", difficulty:"a lot"}}/>
         </div>
       </div>
     )
